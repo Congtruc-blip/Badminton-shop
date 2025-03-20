@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Phản hồi khách hàng</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <h1>Gửi phản hồi của bạn</h1>
+    <form onsubmit="submitFeedback(event)">
+        <input type="text" id="name" placeholder="Tên của bạn" required>
+        <textarea id="message" placeholder="Viết phản hồi tại đây..." required></textarea>
+        <button type="submit">Gửi</button>
+    </form>
+
+    <h2>Phản hồi từ khách hàng</h2>
+    <ul id="feedback-list"></ul>
+
+    <script src="js/feedback.js"></script>
+</body>
+</html>
