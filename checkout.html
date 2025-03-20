@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Thanh toán - Badminton-Shop</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <h1>Thông tin thanh toán</h1>
+    <form onsubmit="completeCheckout(event)">
+        <input type="text" name="name" placeholder="Họ và Tên" required>
+        <input type="text" name="address" placeholder="Địa chỉ" required>
+        <input type="text" name="phone" placeholder="Số điện thoại" required>
+        <button type="submit">Thanh toán</button>
+    </form>
+
+    <script>
+        function completeCheckout(event) {
+            event.preventDefault();
+            alert("Thanh toán thành công! Đơn hàng của bạn sẽ được giao sớm.");
+            localStorage.removeItem("cart");
+            window.location.href = "index.html";
+        }
+    </script>
+</body>
+</html>
